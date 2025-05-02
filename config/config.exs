@@ -10,7 +10,7 @@ if Mix.env() == :dev do
   end
 
   config :esbuild,
-    version: "0.17.11",
+    version: "0.25.1",
     module: esbuild.(~w(--format=esm --sourcemap --outfile=../priv/static/live_charts.esm.js)),
     main: esbuild.(~w(--format=cjs --sourcemap --outfile=../priv/static/live_charts.cjs.js)),
     cdn:
